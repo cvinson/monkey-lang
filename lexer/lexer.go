@@ -135,7 +135,7 @@ func (l *Lexer) readString() string {
 
   l.readChar()
 
-	return l.input[position:l.position]
+	return l.input[position:l.position - 1]
 }
 
 func (l *Lexer) peekChar() byte {
